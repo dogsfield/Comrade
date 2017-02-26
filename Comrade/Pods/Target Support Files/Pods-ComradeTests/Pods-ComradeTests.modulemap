@@ -1,0 +1,6 @@
+framework module Pods_ComradeTests {
+  umbrella header "Pods-ComradeTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

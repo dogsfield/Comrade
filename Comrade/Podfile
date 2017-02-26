@@ -1,0 +1,11 @@
+platform :ios, '8.0'
+
+target 'Comrade' do
+  use_frameworks!
+
+  target 'ComradeTests' do
+    inherit! :search_paths
+    
+  end
+
+end

@@ -10,6 +10,8 @@
 		1877D7451E62E9A4001E8E11 /* Comrade.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1877D73B1E62E9A4001E8E11 /* Comrade.framework */; };
 		1877D74A1E62E9A4001E8E11 /* ComradeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1877D7491E62E9A4001E8E11 /* ComradeTests.swift */; };
 		1877D74C1E62E9A4001E8E11 /* Comrade.h in Headers */ = {isa = PBXBuildFile; fileRef = 1877D73E1E62E9A4001E8E11 /* Comrade.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		611AB8E95D380ED4ED1CE5E9 /* Pods_Comrade.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F7AA7FBE9ACEEC01209E0D6 /* Pods_Comrade.framework */; };
+		66F8CB6B849732E672E6305D /* Pods_ComradeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D8B8FFFC38A4D389874274B /* Pods_ComradeTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,12 @@
 		1877D7441E62E9A4001E8E11 /* ComradeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComradeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1877D7491E62E9A4001E8E11 /* ComradeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComradeTests.swift; sourceTree = "<group>"; };
 		1877D74B1E62E9A4001E8E11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F7AA7FBE9ACEEC01209E0D6 /* Pods_Comrade.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Comrade.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67C6FC715281CB2815AA15A0 /* Pods-Comrade.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Comrade.release.xcconfig"; path = "Pods/Target Support Files/Pods-Comrade/Pods-Comrade.release.xcconfig"; sourceTree = "<group>"; };
+		6D8B8FFFC38A4D389874274B /* Pods_ComradeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ComradeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AC51918B9E122DE76176932 /* Pods-Comrade.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Comrade.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Comrade/Pods-Comrade.debug.xcconfig"; sourceTree = "<group>"; };
+		876F0D6121F8EEFF3BBE4CB0 /* Pods-ComradeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComradeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ComradeTests/Pods-ComradeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9088879C1C29AAF2C34C020F /* Pods-ComradeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComradeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ComradeTests/Pods-ComradeTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				611AB8E95D380ED4ED1CE5E9 /* Pods_Comrade.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +53,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1877D7451E62E9A4001E8E11 /* Comrade.framework in Frameworks */,
+				66F8CB6B849732E672E6305D /* Pods_ComradeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +66,8 @@
 				1877D73D1E62E9A4001E8E11 /* Comrade */,
 				1877D7481E62E9A4001E8E11 /* ComradeTests */,
 				1877D73C1E62E9A4001E8E11 /* Products */,
+				569F9E46C5BA0B25B09FB01E /* Pods */,
+				2A39324D098965A4D6C3022B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +98,26 @@
 			path = ComradeTests;
 			sourceTree = "<group>";
 		};
+		2A39324D098965A4D6C3022B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F7AA7FBE9ACEEC01209E0D6 /* Pods_Comrade.framework */,
+				6D8B8FFFC38A4D389874274B /* Pods_ComradeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		569F9E46C5BA0B25B09FB01E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7AC51918B9E122DE76176932 /* Pods-Comrade.debug.xcconfig */,
+				67C6FC715281CB2815AA15A0 /* Pods-Comrade.release.xcconfig */,
+				876F0D6121F8EEFF3BBE4CB0 /* Pods-ComradeTests.debug.xcconfig */,
+				9088879C1C29AAF2C34C020F /* Pods-ComradeTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -104,10 +136,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1877D74F1E62E9A4001E8E11 /* Build configuration list for PBXNativeTarget "Comrade" */;
 			buildPhases = (
+				6ECF47645F02DB6E68E2F939 /* [CP] Check Pods Manifest.lock */,
 				1877D7361E62E9A4001E8E11 /* Sources */,
 				1877D7371E62E9A4001E8E11 /* Frameworks */,
 				1877D7381E62E9A4001E8E11 /* Headers */,
 				1877D7391E62E9A4001E8E11 /* Resources */,
+				5518E0E98A8325DFA3D64130 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1877D7521E62E9A4001E8E11 /* Build configuration list for PBXNativeTarget "ComradeTests" */;
 			buildPhases = (
+				3B6D22912B9E45974F737101 /* [CP] Check Pods Manifest.lock */,
 				1877D7401E62E9A4001E8E11 /* Sources */,
 				1877D7411E62E9A4001E8E11 /* Frameworks */,
 				1877D7421E62E9A4001E8E11 /* Resources */,
+				FA20FDE7C198F3A9C18EC076 /* [CP] Embed Pods Frameworks */,
+				1C42395E8F22670E21C85FEB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -190,6 +227,84 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C42395E8F22670E21C85FEB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ComradeTests/Pods-ComradeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B6D22912B9E45974F737101 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5518E0E98A8325DFA3D64130 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Comrade/Pods-Comrade-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6ECF47645F02DB6E68E2F939 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FA20FDE7C198F3A9C18EC076 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ComradeTests/Pods-ComradeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1877D7361E62E9A4001E8E11 /* Sources */ = {
@@ -319,6 +434,7 @@
 		};
 		1877D7501E62E9A4001E8E11 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AC51918B9E122DE76176932 /* Pods-Comrade.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -337,6 +453,7 @@
 		};
 		1877D7511E62E9A4001E8E11 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67C6FC715281CB2815AA15A0 /* Pods-Comrade.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -355,6 +472,7 @@
 		};
 		1877D7531E62E9A4001E8E11 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 876F0D6121F8EEFF3BBE4CB0 /* Pods-ComradeTests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = ComradeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -366,6 +484,7 @@
 		};
 		1877D7541E62E9A4001E8E11 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9088879C1C29AAF2C34C020F /* Pods-ComradeTests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = ComradeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
