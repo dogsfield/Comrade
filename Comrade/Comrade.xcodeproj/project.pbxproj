@@ -10,6 +10,8 @@
 		1877D7451E62E9A4001E8E11 /* Comrade.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1877D73B1E62E9A4001E8E11 /* Comrade.framework */; };
 		1877D74A1E62E9A4001E8E11 /* ComradeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1877D7491E62E9A4001E8E11 /* ComradeTests.swift */; };
 		1877D74C1E62E9A4001E8E11 /* Comrade.h in Headers */ = {isa = PBXBuildFile; fileRef = 1877D73E1E62E9A4001E8E11 /* Comrade.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18BEF58A1E62EC6800C2B63A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18BEF5881E62EC6800C2B63A /* Info.plist */; };
+		18BEF58F1E62ED4D00C2B63A /* Comrade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BEF58E1E62ED4D00C2B63A /* Comrade.swift */; };
 		611AB8E95D380ED4ED1CE5E9 /* Pods_Comrade.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F7AA7FBE9ACEEC01209E0D6 /* Pods_Comrade.framework */; };
 		66F8CB6B849732E672E6305D /* Pods_ComradeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D8B8FFFC38A4D389874274B /* Pods_ComradeTests.framework */; };
 /* End PBXBuildFile section */
@@ -27,10 +29,11 @@
 /* Begin PBXFileReference section */
 		1877D73B1E62E9A4001E8E11 /* Comrade.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Comrade.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1877D73E1E62E9A4001E8E11 /* Comrade.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Comrade.h; sourceTree = "<group>"; };
-		1877D73F1E62E9A4001E8E11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1877D7441E62E9A4001E8E11 /* ComradeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComradeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1877D7491E62E9A4001E8E11 /* ComradeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComradeTests.swift; sourceTree = "<group>"; };
 		1877D74B1E62E9A4001E8E11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18BEF5881E62EC6800C2B63A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18BEF58E1E62ED4D00C2B63A /* Comrade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comrade.swift; sourceTree = "<group>"; };
 		5F7AA7FBE9ACEEC01209E0D6 /* Pods_Comrade.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Comrade.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67C6FC715281CB2815AA15A0 /* Pods-Comrade.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Comrade.release.xcconfig"; path = "Pods/Target Support Files/Pods-Comrade/Pods-Comrade.release.xcconfig"; sourceTree = "<group>"; };
 		6D8B8FFFC38A4D389874274B /* Pods_ComradeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ComradeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,7 +87,8 @@
 			isa = PBXGroup;
 			children = (
 				1877D73E1E62E9A4001E8E11 /* Comrade.h */,
-				1877D73F1E62E9A4001E8E11 /* Info.plist */,
+				18BEF5891E62EC6800C2B63A /* Sources */,
+				18BEF5871E62EC6800C2B63A /* Resources */,
 			);
 			path = Comrade;
 			sourceTree = "<group>";
@@ -96,6 +100,30 @@
 				1877D74B1E62E9A4001E8E11 /* Info.plist */,
 			);
 			path = ComradeTests;
+			sourceTree = "<group>";
+		};
+		18BEF5871E62EC6800C2B63A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				18BEF5881E62EC6800C2B63A /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		18BEF5891E62EC6800C2B63A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				18BEF58D1E62ED4D00C2B63A /* Core */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		18BEF58D1E62ED4D00C2B63A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				18BEF58E1E62ED4D00C2B63A /* Comrade.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 		2A39324D098965A4D6C3022B /* Frameworks */ = {
@@ -185,6 +213,7 @@
 				TargetAttributes = {
 					1877D73A1E62E9A4001E8E11 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					1877D7431E62E9A4001E8E11 = {
@@ -216,6 +245,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18BEF58A1E62EC6800C2B63A /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +341,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18BEF58F1E62ED4D00C2B63A /* Comrade.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,17 +467,19 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7AC51918B9E122DE76176932 /* Pods-Comrade.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Comrade/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Comrade/Resources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DogsField.Comrade;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -455,12 +488,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 67C6FC715281CB2815AA15A0 /* Pods-Comrade.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Comrade/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Comrade/Resources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DogsField.Comrade;
@@ -474,6 +508,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 876F0D6121F8EEFF3BBE4CB0 /* Pods-ComradeTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = ComradeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DogsField.ComradeTests;
@@ -486,6 +521,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9088879C1C29AAF2C34C020F /* Pods-ComradeTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = ComradeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DogsField.ComradeTests;
@@ -513,6 +549,7 @@
 				1877D7511E62E9A4001E8E11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1877D7521E62E9A4001E8E11 /* Build configuration list for PBXNativeTarget "ComradeTests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +558,7 @@
 				1877D7541E62E9A4001E8E11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
