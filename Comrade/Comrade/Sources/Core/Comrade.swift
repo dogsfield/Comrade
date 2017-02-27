@@ -8,9 +8,9 @@
 
 import Foundation
 
-class Comrade
+public class Comrade
 {
-    init()
+    init(collectors: Array<DataCollector>, storages: Array<DataStorage>)
     {
         
     }

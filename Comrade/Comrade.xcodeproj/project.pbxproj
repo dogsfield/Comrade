@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		184400731E64A81800D13136 /* DataCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184400721E64A81800D13136 /* DataCollector.swift */; };
+		184400751E64A82F00D13136 /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184400741E64A82F00D13136 /* DataStorage.swift */; };
+		184400791E64AA2B00D13136 /* DataChunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184400781E64AA2B00D13136 /* DataChunk.swift */; };
+		1844007B1E64AA4A00D13136 /* ComradeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1844007A1E64AA4A00D13136 /* ComradeSpec.swift */; };
+		1844007D1E64AB1000D13136 /* TestDataCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1844007C1E64AB1000D13136 /* TestDataCollector.swift */; };
+		1844007F1E64AB1C00D13136 /* TestDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1844007E1E64AB1C00D13136 /* TestDataStorage.swift */; };
+		184400811E64AB6100D13136 /* TestDataChunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184400801E64AB6100D13136 /* TestDataChunk.swift */; };
 		1877D7451E62E9A4001E8E11 /* Comrade.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1877D73B1E62E9A4001E8E11 /* Comrade.framework */; };
 		1877D74A1E62E9A4001E8E11 /* ComradeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1877D7491E62E9A4001E8E11 /* ComradeTests.swift */; };
 		1877D74C1E62E9A4001E8E11 /* Comrade.h in Headers */ = {isa = PBXBuildFile; fileRef = 1877D73E1E62E9A4001E8E11 /* Comrade.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -27,6 +34,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		184400721E64A81800D13136 /* DataCollector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataCollector.swift; sourceTree = "<group>"; };
+		184400741E64A82F00D13136 /* DataStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
+		184400781E64AA2B00D13136 /* DataChunk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataChunk.swift; sourceTree = "<group>"; };
+		1844007A1E64AA4A00D13136 /* ComradeSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComradeSpec.swift; sourceTree = "<group>"; };
+		1844007C1E64AB1000D13136 /* TestDataCollector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDataCollector.swift; sourceTree = "<group>"; };
+		1844007E1E64AB1C00D13136 /* TestDataStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDataStorage.swift; sourceTree = "<group>"; };
+		184400801E64AB6100D13136 /* TestDataChunk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDataChunk.swift; sourceTree = "<group>"; };
 		1877D73B1E62E9A4001E8E11 /* Comrade.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Comrade.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1877D73E1E62E9A4001E8E11 /* Comrade.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Comrade.h; sourceTree = "<group>"; };
 		1877D7441E62E9A4001E8E11 /* ComradeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComradeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +77,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		184400761E64A90400D13136 /* Spec */ = {
+			isa = PBXGroup;
+			children = (
+				184400771E64A90400D13136 /* Core */,
+			);
+			path = Spec;
+			sourceTree = "<group>";
+		};
+		184400771E64A90400D13136 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				1844007A1E64AA4A00D13136 /* ComradeSpec.swift */,
+				1844007C1E64AB1000D13136 /* TestDataCollector.swift */,
+				1844007E1E64AB1C00D13136 /* TestDataStorage.swift */,
+				184400801E64AB6100D13136 /* TestDataChunk.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		1877D7311E62E9A4001E8E11 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +129,7 @@
 		1877D7481E62E9A4001E8E11 /* ComradeTests */ = {
 			isa = PBXGroup;
 			children = (
+				184400761E64A90400D13136 /* Spec */,
 				1877D7491E62E9A4001E8E11 /* ComradeTests.swift */,
 				1877D74B1E62E9A4001E8E11 /* Info.plist */,
 			);
@@ -122,6 +156,9 @@
 			isa = PBXGroup;
 			children = (
 				18BEF58E1E62ED4D00C2B63A /* Comrade.swift */,
+				184400721E64A81800D13136 /* DataCollector.swift */,
+				184400741E64A82F00D13136 /* DataStorage.swift */,
+				184400781E64AA2B00D13136 /* DataChunk.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -341,7 +378,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				184400791E64AA2B00D13136 /* DataChunk.swift in Sources */,
+				184400751E64A82F00D13136 /* DataStorage.swift in Sources */,
 				18BEF58F1E62ED4D00C2B63A /* Comrade.swift in Sources */,
+				184400731E64A81800D13136 /* DataCollector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,7 +389,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1844007B1E64AA4A00D13136 /* ComradeSpec.swift in Sources */,
+				184400811E64AB6100D13136 /* TestDataChunk.swift in Sources */,
 				1877D74A1E62E9A4001E8E11 /* ComradeTests.swift in Sources */,
+				1844007D1E64AB1000D13136 /* TestDataCollector.swift in Sources */,
+				1844007F1E64AB1C00D13136 /* TestDataStorage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,11 +519,13 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "$(SRCROOT)/Comrade/Resources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-Onone";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DogsField.Comrade;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -496,7 +542,9 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "$(SRCROOT)/Comrade/Resources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-Onone";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DogsField.Comrade;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
