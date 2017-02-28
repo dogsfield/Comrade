@@ -11,5 +11,13 @@ import Comrade
 
 class TestDataStorage: DataStorage
 {
-
+    func store(chunk: DataChunk)
+    {
+        
+    }
+    
+    func fetch<T : DataChunk>(type: T.Type)
+    {
+        
+    }
 }

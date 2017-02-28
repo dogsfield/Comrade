@@ -1,5 +1,5 @@
 //
-//  DataCollector.swift
+//  ComradeClojure.swift
 //  Comrade
 //
 //  Created by Michal Miedlarz on 27.02.2017.
@@ -7,8 +7,3 @@
 //
 
 import Foundation
-
-public protocol DataCollector
-{
-
-}

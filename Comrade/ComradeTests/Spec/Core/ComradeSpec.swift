@@ -17,11 +17,34 @@ class ComradeSpec: QuickSpec
     {
         describe("Comrade library")
         {
+            let storages: Array<DataStorage> = [TestDataStorage()]
+            let collectors: Array<DataCollector> = [TestDataCollector()]
+            
             it("Should be initialized with set of DataCollectors and DataStorages")
             {
-                let storages: Array<DataStorage> = [TestDataStorage()]
-                let collectors: Array<DataCollector> = [TestDataCollector()]
                 _ = Comrade(collectors: collectors, storages: storages)
+            }
+            
+            it("Should be started")
+            {
+                let comrade = Comrade(collectors: collectors, storages: storages)
+                comrade.start()
+                expect(comrade.isRunning).to(beTrue())
+            }
+            
+            it("Should be stopped after start")
+            {
+                let comrade = Comrade(collectors: collectors, storages: storages)
+                comrade.start()
+                expect(comrade.isRunning).to(beTrue())
+                comrade.stop()
+                expect(comrade.isRunning).to(beFalse())
+            }
+            
+            it("Should not run when it was not started")
+            {
+                let comrade = Comrade(collectors: collectors, storages: storages)
+                expect(comrade.isRunning).to(beFalse())
             }
         }
     }

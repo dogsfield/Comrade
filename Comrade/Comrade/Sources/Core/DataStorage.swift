@@ -10,5 +10,6 @@ import Foundation
 
 public protocol DataStorage
 {
-    
+    func store(chunk: DataChunk)
+    func fetch<T: DataChunk>(type: T.Type)
 }
