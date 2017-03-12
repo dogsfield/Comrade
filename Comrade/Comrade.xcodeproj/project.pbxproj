@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1826EBDF1E75677D00959E09 /* BatteryUsageDataCollectorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1826EBDE1E75677D00959E09 /* BatteryUsageDataCollectorSpec.swift */; };
+		1826EBE21E756EA500959E09 /* TestDataCollectorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1826EBE11E756EA500959E09 /* TestDataCollectorDelegate.swift */; };
 		184400731E64A81800D13136 /* DataCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184400721E64A81800D13136 /* DataCollector.swift */; };
 		184400751E64A82F00D13136 /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184400741E64A82F00D13136 /* DataStorage.swift */; };
 		184400791E64AA2B00D13136 /* DataChunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184400781E64AA2B00D13136 /* DataChunk.swift */; };
@@ -18,6 +20,8 @@
 		1877D7451E62E9A4001E8E11 /* Comrade.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1877D73B1E62E9A4001E8E11 /* Comrade.framework */; };
 		1877D74A1E62E9A4001E8E11 /* ComradeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1877D7491E62E9A4001E8E11 /* ComradeTests.swift */; };
 		1877D74C1E62E9A4001E8E11 /* Comrade.h in Headers */ = {isa = PBXBuildFile; fileRef = 1877D73E1E62E9A4001E8E11 /* Comrade.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18A3C0341E7560D800FF3746 /* BatteryUsageDataCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A3C0331E7560D800FF3746 /* BatteryUsageDataCollector.swift */; };
+		18A3C0361E7560F200FF3746 /* BatteryUsageDataChunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A3C0351E7560F200FF3746 /* BatteryUsageDataChunk.swift */; };
 		18BEF58F1E62ED4D00C2B63A /* Comrade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BEF58E1E62ED4D00C2B63A /* Comrade.swift */; };
 		611AB8E95D380ED4ED1CE5E9 /* Pods_Comrade.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F7AA7FBE9ACEEC01209E0D6 /* Pods_Comrade.framework */; };
 		66F8CB6B849732E672E6305D /* Pods_ComradeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D8B8FFFC38A4D389874274B /* Pods_ComradeTests.framework */; };
@@ -34,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1826EBDE1E75677D00959E09 /* BatteryUsageDataCollectorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatteryUsageDataCollectorSpec.swift; sourceTree = "<group>"; };
+		1826EBE11E756EA500959E09 /* TestDataCollectorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDataCollectorDelegate.swift; sourceTree = "<group>"; };
 		184400721E64A81800D13136 /* DataCollector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataCollector.swift; sourceTree = "<group>"; };
 		184400741E64A82F00D13136 /* DataStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
 		184400781E64AA2B00D13136 /* DataChunk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataChunk.swift; sourceTree = "<group>"; };
@@ -47,6 +53,8 @@
 		1877D7441E62E9A4001E8E11 /* ComradeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComradeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1877D7491E62E9A4001E8E11 /* ComradeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComradeTests.swift; sourceTree = "<group>"; };
 		1877D74B1E62E9A4001E8E11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18A3C0331E7560D800FF3746 /* BatteryUsageDataCollector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatteryUsageDataCollector.swift; sourceTree = "<group>"; };
+		18A3C0351E7560F200FF3746 /* BatteryUsageDataChunk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatteryUsageDataChunk.swift; sourceTree = "<group>"; };
 		18BEF5881E62EC6800C2B63A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18BEF58E1E62ED4D00C2B63A /* Comrade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comrade.swift; sourceTree = "<group>"; };
 		5F7AA7FBE9ACEEC01209E0D6 /* Pods_Comrade.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Comrade.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,10 +86,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1826EBE01E756DD200959E09 /* TestUtils */ = {
+			isa = PBXGroup;
+			children = (
+				1826EBE11E756EA500959E09 /* TestDataCollectorDelegate.swift */,
+			);
+			path = TestUtils;
+			sourceTree = "<group>";
+		};
 		184400761E64A90400D13136 /* Spec */ = {
 			isa = PBXGroup;
 			children = (
+				1826EBE01E756DD200959E09 /* TestUtils */,
 				184400771E64A90400D13136 /* Core */,
+				18A3C0391E75617D00FF3746 /* BatteryUsage */,
 			);
 			path = Spec;
 			sourceTree = "<group>";
@@ -137,6 +155,23 @@
 			path = ComradeTests;
 			sourceTree = "<group>";
 		};
+		18A3C0321E7560BF00FF3746 /* BatteryUsage */ = {
+			isa = PBXGroup;
+			children = (
+				18A3C0331E7560D800FF3746 /* BatteryUsageDataCollector.swift */,
+				18A3C0351E7560F200FF3746 /* BatteryUsageDataChunk.swift */,
+			);
+			path = BatteryUsage;
+			sourceTree = "<group>";
+		};
+		18A3C0391E75617D00FF3746 /* BatteryUsage */ = {
+			isa = PBXGroup;
+			children = (
+				1826EBDE1E75677D00959E09 /* BatteryUsageDataCollectorSpec.swift */,
+			);
+			path = BatteryUsage;
+			sourceTree = "<group>";
+		};
 		18BEF5871E62EC6800C2B63A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				18BEF58D1E62ED4D00C2B63A /* Core */,
+				18A3C0321E7560BF00FF3746 /* BatteryUsage */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -380,9 +416,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				184400791E64AA2B00D13136 /* DataChunk.swift in Sources */,
+				18A3C0341E7560D800FF3746 /* BatteryUsageDataCollector.swift in Sources */,
 				184400751E64A82F00D13136 /* DataStorage.swift in Sources */,
 				184400831E64C4F000D13136 /* ComradeClojure.swift in Sources */,
 				18BEF58F1E62ED4D00C2B63A /* Comrade.swift in Sources */,
+				18A3C0361E7560F200FF3746 /* BatteryUsageDataChunk.swift in Sources */,
 				184400731E64A81800D13136 /* DataCollector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,8 +429,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1826EBDF1E75677D00959E09 /* BatteryUsageDataCollectorSpec.swift in Sources */,
 				1844007B1E64AA4A00D13136 /* ComradeSpec.swift in Sources */,
 				184400811E64AB6100D13136 /* TestDataChunk.swift in Sources */,
+				1826EBE21E756EA500959E09 /* TestDataCollectorDelegate.swift in Sources */,
 				1877D74A1E62E9A4001E8E11 /* ComradeTests.swift in Sources */,
 				1844007D1E64AB1000D13136 /* TestDataCollector.swift in Sources */,
 				1844007F1E64AB1C00D13136 /* TestDataStorage.swift in Sources */,
