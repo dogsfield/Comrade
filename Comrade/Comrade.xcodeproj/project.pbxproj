@@ -89,6 +89,7 @@
 		184400761E64A90400D13136 /* Spec */ = {
 			isa = PBXGroup;
 			children = (
+				2117532B1E7563FA00D7A62F /* CPUUsage */,
 				184400771E64A90400D13136 /* Core */,
 			);
 			path = Spec;
@@ -140,7 +141,6 @@
 			children = (
 				184400761E64A90400D13136 /* Spec */,
 				1877D7491E62E9A4001E8E11 /* ComradeTests.swift */,
-				2117532B1E7563FA00D7A62F /* CPUUsage */,
 				1877D74B1E62E9A4001E8E11 /* Info.plist */,
 			);
 			path = ComradeTests;
@@ -190,8 +190,7 @@
 			children = (
 				211753321E7568CA00D7A62F /* CPUDataCollectorSpec.swift */,
 			);
-			name = CPUUsage;
-			path = Spec/CPUUsage;
+			path = CPUUsage;
 			sourceTree = "<group>";
 		};
 		21EC11B51E7572EF004DF56C /* Data Storage */ = {
