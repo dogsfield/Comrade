@@ -8,10 +8,22 @@
 
 import Foundation
 
-class Comrade
+public class Comrade
 {
-    init()
+    public var isRunning = false
+    
+    init(collectors: Array<DataCollector>, storages: Array<DataStorage>)
     {
         
+    }
+    
+    public func start()
+    {
+        isRunning = true
+    }
+    
+    public func stop()
+    {
+        isRunning = false
     }
 }
