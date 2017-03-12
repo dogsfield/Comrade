@@ -19,6 +19,10 @@
 		1877D74A1E62E9A4001E8E11 /* ComradeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1877D7491E62E9A4001E8E11 /* ComradeTests.swift */; };
 		1877D74C1E62E9A4001E8E11 /* Comrade.h in Headers */ = {isa = PBXBuildFile; fileRef = 1877D73E1E62E9A4001E8E11 /* Comrade.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		18BEF58F1E62ED4D00C2B63A /* Comrade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BEF58E1E62ED4D00C2B63A /* Comrade.swift */; };
+		2117532D1E75640D00D7A62F /* CPUDataCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2117532C1E75640D00D7A62F /* CPUDataCollector.swift */; };
+		211753311E75642700D7A62F /* CPUDataChunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211753301E75642700D7A62F /* CPUDataChunk.swift */; };
+		211753331E7568CA00D7A62F /* CPUDataCollectorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211753321E7568CA00D7A62F /* CPUDataCollectorSpec.swift */; };
+		21EC11B41E756FE8004DF56C /* LocalMemoryDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EC11B31E756FE8004DF56C /* LocalMemoryDataStorage.swift */; };
 		611AB8E95D380ED4ED1CE5E9 /* Pods_Comrade.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F7AA7FBE9ACEEC01209E0D6 /* Pods_Comrade.framework */; };
 		66F8CB6B849732E672E6305D /* Pods_ComradeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D8B8FFFC38A4D389874274B /* Pods_ComradeTests.framework */; };
 /* End PBXBuildFile section */
@@ -49,6 +53,10 @@
 		1877D74B1E62E9A4001E8E11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18BEF5881E62EC6800C2B63A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18BEF58E1E62ED4D00C2B63A /* Comrade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comrade.swift; sourceTree = "<group>"; };
+		2117532C1E75640D00D7A62F /* CPUDataCollector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPUDataCollector.swift; sourceTree = "<group>"; };
+		211753301E75642700D7A62F /* CPUDataChunk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPUDataChunk.swift; sourceTree = "<group>"; };
+		211753321E7568CA00D7A62F /* CPUDataCollectorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPUDataCollectorSpec.swift; sourceTree = "<group>"; };
+		21EC11B31E756FE8004DF56C /* LocalMemoryDataStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalMemoryDataStorage.swift; sourceTree = "<group>"; };
 		5F7AA7FBE9ACEEC01209E0D6 /* Pods_Comrade.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Comrade.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67C6FC715281CB2815AA15A0 /* Pods-Comrade.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Comrade.release.xcconfig"; path = "Pods/Target Support Files/Pods-Comrade/Pods-Comrade.release.xcconfig"; sourceTree = "<group>"; };
 		6D8B8FFFC38A4D389874274B /* Pods_ComradeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ComradeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,6 +140,7 @@
 			children = (
 				184400761E64A90400D13136 /* Spec */,
 				1877D7491E62E9A4001E8E11 /* ComradeTests.swift */,
+				2117532B1E7563FA00D7A62F /* CPUUsage */,
 				1877D74B1E62E9A4001E8E11 /* Info.plist */,
 			);
 			path = ComradeTests;
@@ -149,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				18BEF58D1E62ED4D00C2B63A /* Core */,
+				2117532A1E75631A00D7A62F /* CPUUsage */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -161,8 +171,35 @@
 				184400721E64A81800D13136 /* DataCollector.swift */,
 				184400741E64A82F00D13136 /* DataStorage.swift */,
 				184400781E64AA2B00D13136 /* DataChunk.swift */,
+				211753341E756E1100D7A62F /* Data Storage */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		2117532A1E75631A00D7A62F /* CPUUsage */ = {
+			isa = PBXGroup;
+			children = (
+				2117532C1E75640D00D7A62F /* CPUDataCollector.swift */,
+				211753301E75642700D7A62F /* CPUDataChunk.swift */,
+			);
+			path = CPUUsage;
+			sourceTree = "<group>";
+		};
+		2117532B1E7563FA00D7A62F /* CPUUsage */ = {
+			isa = PBXGroup;
+			children = (
+				211753321E7568CA00D7A62F /* CPUDataCollectorSpec.swift */,
+			);
+			name = CPUUsage;
+			path = Spec/CPUUsage;
+			sourceTree = "<group>";
+		};
+		211753341E756E1100D7A62F /* Data Storage */ = {
+			isa = PBXGroup;
+			children = (
+				21EC11B31E756FE8004DF56C /* LocalMemoryDataStorage.swift */,
+			);
+			path = "Data Storage";
 			sourceTree = "<group>";
 		};
 		2A39324D098965A4D6C3022B /* Frameworks */ = {
@@ -379,6 +416,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				211753311E75642700D7A62F /* CPUDataChunk.swift in Sources */,
+				21EC11B41E756FE8004DF56C /* LocalMemoryDataStorage.swift in Sources */,
+				2117532D1E75640D00D7A62F /* CPUDataCollector.swift in Sources */,
 				184400791E64AA2B00D13136 /* DataChunk.swift in Sources */,
 				184400751E64A82F00D13136 /* DataStorage.swift in Sources */,
 				184400831E64C4F000D13136 /* ComradeClojure.swift in Sources */,
@@ -392,6 +432,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1844007B1E64AA4A00D13136 /* ComradeSpec.swift in Sources */,
+				211753331E7568CA00D7A62F /* CPUDataCollectorSpec.swift in Sources */,
 				184400811E64AB6100D13136 /* TestDataChunk.swift in Sources */,
 				1877D74A1E62E9A4001E8E11 /* ComradeTests.swift in Sources */,
 				1844007D1E64AB1000D13136 /* TestDataCollector.swift in Sources */,
