@@ -22,6 +22,7 @@ public class BatteryUsageDataCollector: NSObject, DataCollector
         self.device = device
     }
     
+    //MARK: DataCollector protocol implementation
     public func isRunning() -> Bool
     {
         return timer != nil
@@ -38,6 +39,7 @@ public class BatteryUsageDataCollector: NSObject, DataCollector
         timer = Timer.scheduledTimer(timeInterval: timeInterval, target: self, selector: #selector(collectBatteryData), userInfo: nil, repeats: true)
     }
     
+    //MARK: Utils
     func collectBatteryData()
     {
         let chunk = BatteryUsageDataChunk(level: device.batteryLevel, state: device.batteryState)

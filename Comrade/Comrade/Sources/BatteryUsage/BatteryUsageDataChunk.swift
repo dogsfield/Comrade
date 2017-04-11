@@ -8,10 +8,10 @@
 
 import UIKit
 
-class BatteryUsageDataChunk: DataChunk
+public class BatteryUsageDataChunk: DataChunk
 {
-    let level: Float
-    let state: UIDeviceBatteryState
+    public let level: Float
+    public let state: UIDeviceBatteryState
     
     init(level: Float, state: UIDeviceBatteryState)
     {

@@ -6,39 +6,44 @@
 //  Copyright © 2017 DogsField. All rights reserved.
 //
 import Foundation
-class CPUDataCollector: NSObject, DataCollector
+public class CPUDataCollector: NSObject, DataCollector
 {
-    weak var delegate: DataCollectorDelegate?
-    
-    fileprivate var isModuleRunning = false
-    var timer: Timer
-    let timeInterval: Double
+    public weak var delegate: DataCollectorDelegate?
+    public let timeInterval: Double    
+    private var timer: Timer?
     
     init(timeInterval: Double)
     {
         self.timeInterval = timeInterval
-        self.timer = Timer()
     }
     
+    //MARK: DataCollector interface implementation
     public func start()
     {
-        isModuleRunning = true
-        timer = Timer.scheduledTimer(timeInterval: timeInterval, target: self, selector: #selector(self.update), userInfo: nil, repeats: true)     
+        clearTimer()
+        timer = Timer.scheduledTimer(timeInterval: timeInterval, target: self, selector: #selector(collectCPUData), userInfo: nil, repeats: true)
     }
     
     public func stop()
     {
-        isModuleRunning = false
+        clearTimer()
     }
     
-    func update()
+    public func isRunning() -> Bool
+    {
+        return timer != nil
+    }
+    
+    //MARK: Utils
+    func collectCPUData()
     {
         let usage = GDCPUUsage.collectCPUUsage()
         delegate?.dataCollector(sender: self, handleChunk: CPUDataChunk(usageLevel: usage), error: nil)
     }
     
-    public func isRunning() -> Bool
+    private func clearTimer()
     {
-        return isModuleRunning
+        timer?.invalidate()
+        timer = nil
     }
 }
