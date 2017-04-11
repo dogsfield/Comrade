@@ -65,7 +65,6 @@ class BatteryUsageDataCollectorSpec: QuickSpec
                 expect(delegate.lastChunk as? BatteryUsageDataChunk).toNotEventually(beNil(), timeout: 3, pollInterval: 1)
                 expect(delegate.lastError).toEventually(beNil(), timeout: 3, pollInterval: 1)
             }
-            
         }
     }
 }

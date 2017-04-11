@@ -8,7 +8,11 @@
 
 import UIKit
 
-class CPUDataChunk: NSObject, DataChunk
+public class CPUDataChunk: DataChunk
 {
-    
+    public let usageLevel: Float
+    init(usageLevel: Float)
+    {
+        self.usageLevel = usageLevel
+    }
 }

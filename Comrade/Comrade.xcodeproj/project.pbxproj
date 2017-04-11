@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18113B981E9D4F39007D98B9 /* GDCPUUsage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18113B971E9D4F39007D98B9 /* GDCPUUsage.swift */; };
 		1826EBE61E757EED00959E09 /* BatteryUsageDataChunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1826EBE41E757EED00959E09 /* BatteryUsageDataChunk.swift */; };
 		1826EBE71E757EED00959E09 /* BatteryUsageDataCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1826EBE51E757EED00959E09 /* BatteryUsageDataCollector.swift */; };
 		1826EBEC1E757F0E00959E09 /* BatteryUsageDataCollectorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1826EBE91E757F0E00959E09 /* BatteryUsageDataCollectorSpec.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18113B971E9D4F39007D98B9 /* GDCPUUsage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GDCPUUsage.swift; sourceTree = "<group>"; };
 		1826EBE41E757EED00959E09 /* BatteryUsageDataChunk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatteryUsageDataChunk.swift; sourceTree = "<group>"; };
 		1826EBE51E757EED00959E09 /* BatteryUsageDataCollector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatteryUsageDataCollector.swift; sourceTree = "<group>"; };
 		1826EBE91E757F0E00959E09 /* BatteryUsageDataCollectorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatteryUsageDataCollectorSpec.swift; sourceTree = "<group>"; };
@@ -224,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				2117532C1E75640D00D7A62F /* CPUDataCollector.swift */,
+				18113B971E9D4F39007D98B9 /* GDCPUUsage.swift */,
 				211753301E75642700D7A62F /* CPUDataChunk.swift */,
 			);
 			path = CPUUsage;
@@ -457,6 +460,7 @@
 				2117532D1E75640D00D7A62F /* CPUDataCollector.swift in Sources */,
 				21EC11B71E7572EF004DF56C /* LocalMemoryDataStorage.swift in Sources */,
 				184400791E64AA2B00D13136 /* DataChunk.swift in Sources */,
+				18113B981E9D4F39007D98B9 /* GDCPUUsage.swift in Sources */,
 				184400751E64A82F00D13136 /* DataStorage.swift in Sources */,
 				184400831E64C4F000D13136 /* ComradeClojure.swift in Sources */,
 				18BEF58F1E62ED4D00C2B63A /* Comrade.swift in Sources */,
