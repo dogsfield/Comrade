@@ -11,20 +11,21 @@ import Comrade
 
 class TestDataCollector: DataCollector
 {
-    weak var delegate: DataCollectorDelegate?
+    weak public var delegate: DataCollectorDelegate?
+    private var running = false
     
-    func start()
+    public func isRunning() -> Bool
     {
-        
+        return running
     }
-    
-    func stop()
+
+    public func start()
     {
-        
+        running = true
     }
-    
-    func isRunning() -> Bool
+
+    public func stop()
     {
-        return false
+        running = false
     }
 }

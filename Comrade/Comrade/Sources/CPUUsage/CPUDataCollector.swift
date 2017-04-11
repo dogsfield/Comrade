@@ -25,8 +25,7 @@ class CPUDataCollector: NSObject, DataCollector
     public func start()
     {
         isModuleRunning = true
-        timer = Timer.scheduledTimer(timeInterval: timeInterval, target: self, selector: #selector(self.update), userInfo: nil, repeats: true)
-        timer.
+        timer = Timer.scheduledTimer(timeInterval: timeInterval, target: self, selector: #selector(self.update), userInfo: nil, repeats: true)     
     }
     
     public func stop()
