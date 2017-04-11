@@ -31,7 +31,6 @@ class CPUDataCollector: NSObject, DataCollector
         isModuleRunning = false
     }
     
-    @objc
     func update()
     {
         let usage = GDCPUUsage.collectCPUUsage()
