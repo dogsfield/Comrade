@@ -5,16 +5,14 @@
 //  Created by Nomtek on 12.03.2017.
 //  Copyright © 2017 DogsField. All rights reserved.
 //
-
-import UIKit
-
+import Foundation
 class CPUDataCollector: NSObject, DataCollector
 {
     weak var delegate: DataCollectorDelegate?
     
-    let timeInterval: Double
     fileprivate var isModuleRunning = false
     var timer: Timer
+    let timeInterval: Double
     
     init(timeInterval: Double)
     {
@@ -33,14 +31,15 @@ class CPUDataCollector: NSObject, DataCollector
         isModuleRunning = false
     }
     
+    @objc
     func update()
     {
-        
+        let usage = GDCPUUsage.collectCPUUsage()
+        delegate?.dataCollector(sender: self, handleChunk: CPUDataChunk(usageLevel: usage), error: nil)
     }
     
     public func isRunning() -> Bool
     {
         return isModuleRunning
     }
-
 }

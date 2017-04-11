@@ -10,11 +10,11 @@ import UIKit
 
 public class BatteryUsageDataCollector: NSObject, DataCollector
 {
+
     public let timeInterval: TimeInterval
     public let device: UIDevice
     public weak var delegate: DataCollectorDelegate?
     private var timer: Timer?
-    
     
     init(timeInterval: TimeInterval, device: UIDevice = UIDevice.current)
     {
